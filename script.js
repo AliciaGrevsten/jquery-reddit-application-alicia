@@ -16,23 +16,24 @@ $(document).ready(function() {
                             '</h6></div></div></div><br>');
         });
 
+        $('.card').hover(
+            function() {
+                $(this).animate({
+                    marginRight: '-=10%',
+                    marginLeft: '+=10%'
+                }, 200);
+            },
+    
+            function() {
+                $(this).animate({
+                    marginRight: '0%',
+                    marginLeft: '0%'
+                }, 200);
+            }
+        );
     });
 
 
-    $('.card').hover(
-        function() {
-            $(this).animate({
-                marginRight: '-=10%',
-                marginLeft: '+=10%'
-            }, 200);
-        },
-
-        function() {
-            $(this).animate({
-                marginRight: '0%',
-                marginLeft: '0%'
-            }, 200);
-        }
-    );
+    
 
 });
